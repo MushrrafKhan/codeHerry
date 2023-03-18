@@ -1,0 +1,26 @@
+{
+  "name": "web_development",
+  "version": "1.0.0",
+  "description": "in this project add html css js and node",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "ejs": "^3.1.6",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://___mushrraf@bitbucket.org/___mushrraf/codeherry.git"
+  },
+  "author": "Mushrraf",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/___mushrraf/codeherry#readme"
+}

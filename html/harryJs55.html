@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+
+    let friends = ["Rohan", "Sanjeev"];                                    // This is array-- array ko get krne ke liye three loop ka use kiya gya he below. for,foreach,for of
+    for (let index = 0; index < friends.length; index++) {                 // (1) ye old tarika he array ko get krne ka by for loop
+        console.log("for -- Hello friend, " + friends[index]);
+    }
+
+    friends.forEach(function f(element){                                               // (2) ye new tarika ka he array ko get krne by forEach loop
+        console.log("forEach -- Hello Friend, " + element + " to modern JavaScript");
+    });
+
+    for (element of friends){                                                          // (3) ye bhi new tarika ka he array ko get krne by for of loop
+        console.log("for of -- Hello Friend, " + element + " to modern JavaScript again");
+    }
+
+console.log('----------------------------------------------------------------------')
+
+
+    let employee = {                                                       // This is object-- object ko get krne ke liye below loop ka use kiya gya he
+        name: "Harry",
+        salary: 2}
+                                                                         
+    for(key in employee){                                                       // ye new tarika ka he object ko get krne by for in loop
+        console.log(`for in -- The ${key} of employee is ${employee[key]}`); }
+    
+    let i =0;                                                                   // while loop in js
+    while(i<4){
+        console.log(`${i} is less than 4`);
+        i++; }
+   
+    let j =34;                                                                  // do while loop in js
+    do{
+        console.log(`${j} is less than 4 and we are inside do while loop`);
+        j++;
+    }while(j<4);
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

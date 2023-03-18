@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & z-index Explained</title>
+    <style>
+        /* display:none; - It completely removes an HTML tag from the web page like it was never there. */
+
+        /* visibility:hidden;  - It makes the tag invisible but will not remove the element, and it will still occupy the space on the page. */
+
+        /* z-index = kisi ko agar z-index di gai he to wo uske uper aa jayega.
+        An element with greater stack order is always in front of an element with a lower stack order.
+         will work only for position: relative, absolute, fixed or sticky.  */
+
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1 {
+            background-color: greenyellow;
+        }
+        #box2 {
+            background-color: rebeccapurple;
+            visibility: hidden;
+        }
+        #box3 {
+            background-color: blue;
+            display: none
+        }
+        #box4 {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 
+         This type and result below- yaha inke bhich me $ diya he jo box ko number deta he  -->
+
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>
+
+
+
+
+
+
+

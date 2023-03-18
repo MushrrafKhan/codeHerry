@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript String Functions</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <script>
+    var str = "This is a string";
+    console.log(str);
+
+    // First occurence of a substring
+    var position = str.indexOf('st');
+    console.log(`position indexOf = ${position}`)
+
+    // Last occurence of a substring
+    position = str.lastIndexOf('n');
+    console.log(`position lastIndexof = ${position}`)
+
+    // Substring from a string
+    var substr = str.slice(1,7);
+    var substr1 = str.substring(1,7);
+    var substr2 = str.substr(1,3);
+    console.log(`position slice = ${substr}`)
+    console.log(`position substring = ${substr1}`)
+    console.log(`position substr = ${substr2}`)
+    
+    var replaced = str.replace('string', 'Harry');
+    // console.log(str)
+    // console.log(replaced)
+
+    // console.log(str.toUpperCase());
+    // console.log(str.toLowerCase());
+    // var newString = str.concat('New String')
+    // console.log(newString)
+    var strWithWhitespaces = "   this contains        whitespaces   ";
+    console.log(strWithWhitespaces+'whitspace')
+    // console.log(trim(strWithWhitespaces)+'trim')
+
+    var char2 = str.charAt(2);
+    // var char2 = str.charCodeAt(2); // Not very important
+    console.log(char2+'charat')
+
+    console.log(str[3])
+
+    {
+        var  a = 'this is const variable'
+        console.log(a)
+         var a = 'another const'
+        console.log(a)
+    }
+    a = 88
+    console.log(a)
+    
+
+
+    </script>
+</body>
+</html>
